@@ -1,0 +1,28 @@
+.buttoncontainer {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border: 3px solid green;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: relative;
+    top: 40%;
+    left: 5%;
+  }
+
+button {
+
+}
+
+.hello {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}
