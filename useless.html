@@ -7,13 +7,21 @@
     <title></title>
 </head>
 <body>
-    <div class="buttoncontainer">
-        <div class="vertical-center">
-            <button type="button">HAHA OMG</button>
+    <div class="keycontainer">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">Oof</span>
+        </div>
+        <div class="key">
+            <kbd>Huh</kbd>
+            <span class="sound">Aah</span>
         </div>
     </div>
 
+    <audio data-key="65" src="sound/oof.mp3"></audio>
+
     <div class="hello"></div>
     <script src="useless.js"></script>
+    <script src="foreach.js"></script>
 </body>
 </html>

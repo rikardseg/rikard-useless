@@ -1,28 +1,47 @@
-.buttoncontainer {
-    margin: auto;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    border: 3px solid green;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .vertical-center {
-    margin: 0;
-    position: relative;
-    top: 40%;
-    left: 5%;
-  }
-
-button {
-
+body {
+  background-color: rgb(240, 227, 224);
 }
 
-.hello {
-  height: 100px;
-  width: 100px;
-  background-color: aqua;
+.piano {
+  text-align: center;
+  position: relative;
+}
+  
+.key {
+  display: inline-block;
+  position: relative;
+  margin: 0 2px;
+  width: 6%;
+  max-width: 85px;
+}
+
+.key .whitekey {
+  border-style: solid;
+  display: flex;
+  height: 20rem;
+}
+
+.key .blackkey {
+  background-color: black;
+  border-style: solid;
+  border-color: black;
+  height: 13rem;
+  position: absolute;
+  top: 0rem;
+  right: -40%;
+  width: 70%;
+}
+
+kbd {
+  font-size: 4rem;
+  position: absolute;
+}
+
+p {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.key .blackkey .blue {
+  background-color: blue;
 }
