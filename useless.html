@@ -7,21 +7,42 @@
     <title></title>
 </head>
 <body>
-    <div class="keycontainer">
-        <div data-key="65" class="key">
-            <kbd>A</kbd>
-            <span class="sound">Oof</span>
-        </div>
-        <div class="key">
-            <kbd>Huh</kbd>
-            <span class="sound">Aah</span>
-        </div>
-    </div>
+<ul class="piano">
+    <li class="key">
+        <span class="whitekey" data-key="65"><kbd>A</kbd></span>
+        <span class="blackkey"></span>
+    </li>
+    <li class="key">
+        <span class="whitekey" data-key="66"><kbd>B</kbd></span>
+        <span class="blackkey"></span>
+    </li>
+    <li class="key">
+        <span class="whitekey" data-key="67"><kbd>C</kbd></span>
+    </li>
+    <li class="key">
+        <span class="whitekey" data-key="68"><kbd>D</kbd></span>
+        <span class="blackkey"></span>
+    </li>
+    <li class="key">
+        <span class="whitekey" data-key="69"><kbd>E</kbd></span>
+        <span class="blackkey"></span>
+    </li>
+    <li class="key">
+        <span class="whitekey" data-key="70"><kbd>F</kbd></span>
+        <span class="blackkey"></span>
+    </li>
+    <li class="key">
+        <span class="whitekey" data-key="71"><kbd>G</kbd></span>
+    </li>
+</ul>
+
+<p></p>
 
     <audio data-key="65" src="sound/oof.mp3"></audio>
+    <audio data-key="66" src="sound/oompa.wav"></audio>
 
-    <div class="hello"></div>
-    <script src="useless.js"></script>
-    <script src="foreach.js"></script>
+    <script src="click.js"></script>
+    <script src="dblclick.js"></script>
+    <script src="keydown.js"></script>
 </body>
 </html>

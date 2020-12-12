@@ -1,6 +1,6 @@
-const image = [
-    { name: 'yoda', image: 'images/babybaby.png' }
-  ];
+// const image = [
+//     { name: 'yoda', image: 'images/babybaby.png' }
+//   ];
   
   const keyspanss = document.querySelectorAll('span');
   
