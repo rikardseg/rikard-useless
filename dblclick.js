@@ -6,8 +6,7 @@
   
   keyspanss.forEach((keyspans) => {
     keyspans.addEventListener('dblclick', () => {
-      const yes = document.querySelector('.blackkey')
-      yes.classList.add('.blue');
       console.log('dblclick', keyspans);
+      keyspans.style.backgroundColor = "blue";
     });
   });
