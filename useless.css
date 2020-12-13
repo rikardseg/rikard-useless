@@ -1,12 +1,25 @@
+:root {
+  --bg-color: rgb(240, 227, 224);
+  --bk-color: rgb(0, 0, 0);
+  --change-key-color: rgb(0, 0, 255);
+}
+
 body {
-  background-color: rgb(240, 227, 224);
+  background-color: var(--bg-color);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 5rem;
 }
 
 .piano {
+  margin-top: 5rem;
   text-align: center;
   position: relative;
 }
-  
+
 .key {
   display: inline-block;
   position: relative;
@@ -17,17 +30,19 @@ body {
   border-style: solid;
   display: flex;
   height: 20rem;
+  z-index: 1;
 }
 
 .key .blackkey {
-  background-color: black;
+  background-color: var(--bk-color);
   border-style: solid;
-  border-color: black;
+  border-color: var(--black-key-color);
   height: 12rem;
   position: absolute;
   top: 0rem;
   right: -40%;
   width: 70%;
+  z-index: 2;
 }
 
 kbd {
@@ -43,20 +58,24 @@ p {
   font-size: 5rem;
 }
 
-.blue {
-  background-color: blue;
-}
-
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .piano {
+    margin-top: 0rem;
+  }
+
   .key {
-    width: 2.1rem;
+    width: 2.5rem;
   }
 
   kbd {
-    font-size: 2rem;
-    right: 60%;
+    font-size: 1.5rem;
   }
-  .piano {
-    position: static;
+
+  p {
+    font-size: 3rem;
   }
 }
