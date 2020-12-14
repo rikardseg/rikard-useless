@@ -1,10 +1,6 @@
-// const buttonclick = document.querySelector('button');
-
-// buttonclick.addEventListener("click", myFunction);
-
-// function myFunction() {
-//   alert ("oh my goodness");
-// }
+//Function linking a keyboard input together with a certain white key.
+//Pressing one of the keyboard inputs will play a specific sound linked to that key.
+//Pressing a key will also add a border around that key.
 
 function mySound(e) {
   const sound = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -17,7 +13,9 @@ function mySound(e) {
 
 window.addEventListener("keydown", mySound);
 
-function removeTransition(e) {
+//Function to remove the border once transition has ended.
+
+function removeBorder(e) {
   if (e.propertyName !== "border-bottom-color") return;
   this.classList.remove("keyHit");
 }
@@ -25,10 +23,5 @@ function removeTransition(e) {
 const whiteKeys = document.querySelectorAll(".whitekey");
 
 whiteKeys.forEach((whiteKey) => {
-  whiteKey.addEventListener("transitionend", removeTransition);
+  whiteKey.addEventListener("transitionend", removeBorder);
 });
-
-// keyspans.forEach((keyspan) => {
-//   keyspan.addEventListener("click", () => {
-//     const ptag = document.querySelector(".pianotext");
-//     ptag.textContent = pianotext[Math.floor(Math.random() * pianotext.length)];

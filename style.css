@@ -4,6 +4,7 @@
   --blue-color: rgb(0, 217, 255);
   --orange-color: rgb(248, 171, 4);
   --white-color: rgb(255, 255, 255);
+  --border-color: rgb(255, 97, 202);
 }
 
 @font-face {
@@ -55,8 +56,8 @@ h2 {
 }
 
 .keyHit {
-  border-color: rgb(255, 97, 202);
-  box-shadow: 0 0 5px rgb(255, 97, 202);
+  border-color: var(--border-color);
+  box-shadow: 0 0 5px var(--border-color);
 }
 
 .key .blackkey {
@@ -66,6 +67,7 @@ h2 {
   height: 12rem;
   position: absolute;
   top: 0rem;
+  transition: all 0.4s;
   right: -40%;
   width: 70%;
   z-index: 2;
@@ -77,12 +79,6 @@ kbd {
   top: 16rem;
   right: 1rem;
   left: 1rem;
-}
-
-.presskey {
-  text-align: center;
-  font-size: 3rem;
-  text-decoration: underline;
 }
 
 .pianotext {

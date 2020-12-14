@@ -1,3 +1,7 @@
+//Function that changes the color of
+//the key to a total of 2 different colors
+//when doubleclicking, before returning to the original color.
+
 const colorKeys = document.querySelectorAll("span");
 
 colorKeys.forEach((colorKey) => {
@@ -27,26 +31,3 @@ colorKeys.forEach((colorKey) => {
     }
   });
 });
-
-// const colorKeys = document.querySelectorAll("span");
-
-// colorKeys.forEach((colorKey) => {
-//   colorKey.addEventListener("dblclick", (e) => {
-//     console.log("dblclick");
-//     if (colorKey.style.backgroundColor == "transparent") {
-//       colorKey.style.backgroundColor = "white";
-//     } else if (colorKey.style.backgroundColor == "white") {
-//       colorKey.style.backgroundColor = "blue";
-//     } else if (colorKey.style.backgroundColor == "blue") {
-//       if (colorKey.classList == "blackkey") {
-//         colorKey.style.backgroundColor = "black";
-//       } else {
-//         colorKey.style.backgroundColor = "white";
-//       }
-//     } else if (colorKey.style.backgroundColor == "black") {
-//       colorKey.style.backgroundColor = "transparent";
-//     } else {
-//       colorKey.style.backgroundColor = "transparent";
-//     }
-//   });
-// });
