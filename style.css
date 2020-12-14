@@ -24,14 +24,14 @@ body {
 h1 {
   color: var(--orange-color);
   text-align: center;
-  margin-top: 4rem;
-  font-size: 4rem;
+  margin-top: 2rem;
+  font-size: 3rem;
   text-shadow: 0 0 2px var(--bk-color), 0 0 2px var(--bk-color);
 }
 
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .piano {
@@ -85,13 +85,13 @@ kbd {
 .pianotext {
   color: var(--white-color);
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-shadow: 0 0 2px var(--bk-color), 0 0 2px var(--bk-color);
 }
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   h2 {
@@ -111,10 +111,7 @@ kbd {
     font-size: 1.5rem;
   }
 
-  .presskey {
-    font-size: 2rem;
-  }
   .pianotext {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 }
