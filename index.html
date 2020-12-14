@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="useless.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Useless Piano</title>
   </head>
   <body>
-    <header><h1>USELESS PIANO</h1></header>
+    <header>
+      <h1>Useless Piano</h1>
+      <h2>Click or Doubleclick</h2>
+    </header>
     <div class="piano">
       <div class="key">
         <span class="whitekey" data-key="65"><kbd>A</kbd></span>
@@ -35,12 +38,16 @@
       <div class="key">
         <span class="whitekey" data-key="71"><kbd>G</kbd></span>
       </div>
-    </div>
-
-    <p></p>
+      <p class="presskey">Press key</p>
+      <p class="pianotext"></p>
 
     <audio data-key="65" src="sound/oof.mp3"></audio>
     <audio data-key="66" src="sound/oompa.wav"></audio>
+    <audio data-key="67" src="sound/horse.wav"></audio>
+    <audio data-key="68" src="sound/wilhelm.wav"></audio>
+    <audio data-key="69" src="sound/rooster.wav"></audio>
+    <audio data-key="70" src="sound/meow.wav"></audio>
+    <audio data-key="71" src="sound/whoosh.wav"></audio>
 
     <script src="click.js"></script>
     <script src="dblclick.js"></script>

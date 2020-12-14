@@ -1,0 +1,123 @@
+:root {
+  --bg-color: rgb(37, 102, 221);
+  --bk-color: rgb(0, 0, 0);
+  --blue-color: rgb(0, 217, 255);
+  --orange-color: rgb(248, 171, 4);
+  --white-color: rgb(255, 255, 255);
+}
+
+@font-face {
+  font-family: "CinzelDecorative-Regular";
+  src: url("font/CinzelDecorative-Regular.woff2") format("woff2"),
+    url("fonts/CinzelDecorative-Regular.woff") format("woff");
+}
+
+* {
+  font-family: "CinzelDecorative-Regular";
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1 {
+  color: var(--orange-color);
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 4rem;
+  text-shadow: 0 0 2px var(--bk-color), 0 0 2px var(--bk-color);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.piano {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.key {
+  display: inline-block;
+  position: relative;
+  width: 5rem;
+}
+
+.key .whitekey {
+  border-style: solid;
+  background-color: var(--white-color);
+  display: flex;
+  height: 20rem;
+  z-index: 1;
+  transition: all 0.4s;
+}
+
+.keyHit {
+  border-color: rgb(255, 97, 202);
+  box-shadow: 0 0 5px rgb(255, 97, 202);
+}
+
+.key .blackkey {
+  background-color: var(--bk-color);
+  border-style: solid;
+  border-color: var(--black-key-color);
+  height: 12rem;
+  position: absolute;
+  top: 0rem;
+  right: -40%;
+  width: 70%;
+  z-index: 2;
+}
+
+kbd {
+  font-size: 3rem;
+  position: absolute;
+  top: 16rem;
+  right: 1rem;
+  left: 1rem;
+}
+
+.presskey {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.pianotext {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 3.5rem;
+  text-shadow: 0 0 2px var(--bk-color), 0 0 2px var(--bk-color);
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .piano {
+    margin-top: 0rem;
+  }
+
+  .key {
+    width: 2.5rem;
+  }
+
+  kbd {
+    font-size: 1.5rem;
+  }
+
+  .presskey {
+    font-size: 2rem;
+  }
+  .pianotext {
+    font-size: 3rem;
+  }
+}

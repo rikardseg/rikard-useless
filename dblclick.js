@@ -5,24 +5,24 @@ colorKeys.forEach((colorKey) => {
     console.log("dblclick", colorKey);
     let changeColor = colorKey.style.backgroundColor;
     if (colorKey.classList == "whitekey") {
-      if (changeColor == "white") {
-        colorKey.style.backgroundColor = "blue";
-      } else if (changeColor == "blue") {
-        colorKey.style.backgroundColor = "transparent";
-      } else if (changeColor == "transparent") {
-        colorKey.style.backgroundColor = "white";
+      if (changeColor == "var(--orange-color)") {
+        colorKey.style.backgroundColor = "var(--blue-color)";
+      } else if (changeColor == "var(--blue-color)") {
+        colorKey.style.backgroundColor = "var(--white-color)";
+      } else if (changeColor == "var(--white-color)") {
+        colorKey.style.backgroundColor = "var(--orange-color)";
       } else {
-        colorKey.style.backgroundColor = "white";
+        colorKey.style.backgroundColor = "var(--orange-color)";
       }
     } else if (colorKey.classList == "blackkey") {
-      if (changeColor == "white") {
-        colorKey.style.backgroundColor = "blue";
-      } else if (changeColor == "blue") {
-        colorKey.style.backgroundColor = "black";
-      } else if (changeColor == "black") {
-        colorKey.style.backgroundColor = "white";
+      if (changeColor == "var(--orange-color)") {
+        colorKey.style.backgroundColor = "var(--blue-color)";
+      } else if (changeColor == "var(--blue-color)") {
+        colorKey.style.backgroundColor = "var(--bk-color)";
+      } else if (changeColor == "var(--bk-color)") {
+        colorKey.style.backgroundColor = "var(--orange-color)";
       } else {
-        colorKey.style.backgroundColor = "white";
+        colorKey.style.backgroundColor = "var(--orange-color)";
       }
     }
   });
