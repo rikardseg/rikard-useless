@@ -17,6 +17,5 @@ keyspans.forEach((keyspan) => {
   keyspan.addEventListener("click", () => {
     const ptag = document.querySelector(".pianotext");
     ptag.textContent = pianotext[Math.floor(Math.random() * pianotext.length)];
-    console.log("click", keyspan);
   });
 });
