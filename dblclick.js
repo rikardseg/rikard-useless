@@ -6,7 +6,7 @@ const colorKeys = document.querySelectorAll("span");
 
 colorKeys.forEach((colorKey) => {
   colorKey.addEventListener("dblclick", () => {
-    let changeColor = colorKey.style.backgroundColor;
+    const changeColor = colorKey.style.backgroundColor;
     if (colorKey.classList == "whitekey") {
       if (changeColor == "var(--orange-color)") {
         colorKey.style.backgroundColor = "var(--blue-color)";
